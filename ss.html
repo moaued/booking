@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>
+	<div>
+	<label class="control-label" for="name"></label>
+	<input type="text" name="name" id="name">
+	<div id="suggestion"></div>
+</div >
+
+</form>
+<script >
+function	name_suggestion(){
+
+var name=
+
+
+
+
+
+}
+
+
+var req=new XMLHttpRequest();
+req.onreadystatechange =function(){
+if(req.readystate== 4 && req.status==200 ){
+
+document.getElementByid('chat').innerHTML=req.responseText;
+
+}
+}
+req.open('GET','chat.php',true);
+req.send();
+
+
+	}
+
+
+setInterval(function(){ajex()},1000);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
